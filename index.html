@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Démineur</title>
+    <script src="dist/Minesweeper.js" type="module"></script>
+    <style>
+        .row {
+            display: flex;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            background-color: #dcdcdc; /* Couleur de fond pour les cellules non révélées */
+            border: 1px solid #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .cell:hover {
+            background-color: #bdbdbd;
+        }
+
+        .cell.revealed {
+            background-color: #a3a3a3; /* Plus sombre pour les cellules révélées */
+            cursor: default; /* Le curseur par défaut indique qu'elle n'est pas cliquable */
+        }
+
+        .cell.triggered {
+            background-color: red; /* Couleur spéciale pour la mine déclenchée */
+            font-size: 28px; /* Légère augmentation de la taille pour l'icône */
+        }
+
+        .cell.flagged {
+            font-size: 28px;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Démineur</h1>
+<button id="newGame">Nouvelle partie</button>
+<label for="difficulty">Difficulté :</label>
+<select id="difficulty">
+    <option value="easy">Facile</option>
+    <option value="medium" selected>Moyen</option>
+    <option value="hard">Difficile</option>
+    <option value="custom">Personnalisé</option>
+</select>
+
+<div id="game"></div>
+</body>
+
+
+</html>
