@@ -7,7 +7,7 @@ Ce projet est une implémentation simple du jeu Démineur en TypeScript.
 1. Assurez-vous d'avoir Node.js installé sur votre système. Vous pouvez le télécharger sur [nodejs.org](https://nodejs.org/).
 2. Clonez ce dépôt GitHub vers votre machine locale en utilisant la commande suivante :
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
+   git clone git@github.com:Druxys/Minesweeper.git
    ```
 3. Accédez au répertoire de votre projet à l'aide de la commande cd :
    ```bash
